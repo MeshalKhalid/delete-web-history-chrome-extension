@@ -1,4 +1,4 @@
-const routineOccurrenceInMiles = 2000;
+const routineOccurrenceInMilliseconds  = 2000;
 const searchKeywords = 'GDP';
 
 
@@ -32,5 +32,5 @@ const deletePage = async (page) => {
 
 const runCleanHistoryRoutine = async () => {
     console.log("running clean history routine");
-    setInterval(async () => { await cleanHistory(); }, routineOccurrenceInMiles);
+    setInterval(async () => { await cleanHistory(); }, routineOccurrenceInMilliseconds );
 }
